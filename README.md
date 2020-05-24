@@ -223,4 +223,4 @@ print("Beatriz Santos:\t{}".format(tree_model.predict(beatriz_santos)[0]))
 
 Out: Tiago Santos:	0
 
-    Beatriz Santos:	1
+Out: Beatriz Santos:	1
