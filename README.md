@@ -213,14 +213,14 @@ submission.to_csv('./submission_tree.csv', index=False)
 
 tiago_santos  = np.array([2, 0, 19, 0, 1, 32.2, 0, 0, 1]).reshape((1, -1))
 
-beatriz_santos= np.array([2, 1, 23, 0, 1, 32.2, 0, 0, 1]).reshape((1, -1))
+bia           = np.array([2, 1, 23, 0, 1, 32.2, 0, 0, 1]).reshape((1, -1))
 
 # Verificando se eu e minha irmã teríamos sobrevivido
 
 print("Tiago Santos:\t{}".format(tree_model.predict(tiago_santos)[0]))
 
-print("Irmã:\t{}".format(tree_model.predict(beatriz_santos)[0]))
+print("Irmã:\t{}".format(tree_model.predict(bia)[0]))
 
 Out: Tiago:	0
 
-Out: Irmã:	1
+Out: Bia:	1
