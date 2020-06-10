@@ -16,7 +16,7 @@ import seaborn as sns
 pd.options.display.max_columns = None
 
 # Renderizar os gráficos diretamento no notebook
-# %matplotlib inline
+%matplotlib inline
 
 
 # Importando o arquivo CSV do Google Drive
@@ -215,12 +215,12 @@ tiago_santos  = np.array([2, 0, 19, 0, 1, 32.2, 0, 0, 1]).reshape((1, -1))
 
 beatriz_santos= np.array([2, 1, 23, 0, 1, 32.2, 0, 0, 1]).reshape((1, -1))
 
-# Verificando se teríamos sobrevivido
+# Verificando se eu e minha irmã teríamos sobrevivido
 
 print("Tiago Santos:\t{}".format(tree_model.predict(tiago_santos)[0]))
 
-print("Beatriz Santos:\t{}".format(tree_model.predict(beatriz_santos)[0]))
+print("Irmã:\t{}".format(tree_model.predict(beatriz_santos)[0]))
 
-Out: Tiago Santos:	0
+Out: Tiago:	0
 
-Out: Beatriz Santos:	1
+Out: Irmã:	1
