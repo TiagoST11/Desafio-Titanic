@@ -1,6 +1,6 @@
 # Desafio-Titanic
-# Este desafio foi replicado na plataforma Google Colab
-
+# Este desafio foi replicado na plataforma Google Colab e se trata da minha primeira experiência com Data Science.
+# Referência para desenvolvimento do projeto - https://github.com/carlosfab/data_science/blob/master/Titanic.ipynb
 # Importando as bibliotecas necessárias
 
 import pandas as pd
@@ -172,6 +172,20 @@ acc_logReg = round(lr_model.score(train, target) * 100, 2)
 print("Acurácia do modelo de Regressão Logística: {}".format(acc_logReg))
 
 #Out: Precisão (acurácia) do modelo de Regressão Logística: 80.13
+
+# Verificando com a regressão logística se eu e minha irmã teríamos sobrevivido
+
+# Declarando os valores das variáveis para mim e minha irmã
+tiago_santos  = np.array([2, 0, 19, 0, 1, 32.2, 0, 0, 1]).reshape((1, -1))
+irma          = np.array([2, 1, 23, 0, 1, 32.2, 0, 0, 1]).reshape((1, -1))
+
+# Verificando se teríamos sobrevivido
+print("Tiago Santos:\t{}".format(lr_model.predict(tiago_santos)[0]))
+print("Bia:\t{}".format(lr_model.predict(irma)[0]))
+
+Out: Tiago Santos: 0
+
+Out: Bia:	1
 
 y_pred_lr = lr_model.predict(test)
 
